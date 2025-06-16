@@ -124,11 +124,11 @@ let op = [];
         currentQuestionIndex = Math.floor(
           Math.random() * selectedQuestions.length
         );
-        //console.log(currentQuestionIndex);
+        
 
         console.log(totalQuestions);
         const q = selectedQuestions[currentQuestionIndex];
-        //shuffleArray(q.questions);
+       
 
         selectedQuestions.splice(currentQuestionIndex, 1);
         const questionEl = document.createElement("div");
@@ -164,15 +164,7 @@ const randomOption = op[randomIndex];
         }
       }
 
-      //   function nextQuestion() {
-      //     //currentQuestionIndex++;
-      //     if (currentQuestionIndex < selectedQuestions.length) {
-      //       showQuestion();
-      //     } else {
-      //       showResult();
-      //     }
-      //   }
-
+    
       function showResult() {
         document.getElementById("quiz-screen").classList.add("hidden");
         document.getElementById("result-screen").classList.remove("hidden");
